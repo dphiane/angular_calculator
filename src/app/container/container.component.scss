@@ -1,0 +1,51 @@
+h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows:repeat(5,50px) ;
+    justify-content: center;
+}
+.container{
+    width: 300px;
+    border: 1px solid ;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+p{
+    background-color: #202020;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.btn{
+    color:white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #202020;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 3px;
+}
+
+.btn_operator{
+    color:#76e461
+}
+.equal{
+    background-color: #178b00;  
+}
+
+.warning{
+    color:rgb(238, 68, 68);
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
+}

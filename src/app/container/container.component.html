@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Angular Calculator</h1>
+    <p>{{input}}</p>
+    <p>Resultat = {{result}}</p>
+    <div class="calculator">
+        <button class="btn warning" (click)="clear()">C</button>
+        <button class="btn btn_operator" (click)="addBracket()">( )</button>
+        <button class="btn btn_operator" (click)="reverseInt()">+/-</button>
+        <button class="btn btn_operator"(click)="addOperator('/')"><i class="fa-solid fa-divide"></i></button>
+        <button class="btn" (click)="addNumber('7')">7</button>
+        <button class="btn"(click)="addNumber('8')">8</button>
+        <button class="btn"(click)="addNumber('9')">9</button>
+        <button class="btn btn_operator"(click)="addOperator('*')"><i class="fa-solid fa-xmark"></i></button>
+        <button class="btn"(click)="addNumber('4')">4</button>
+        <button class="btn"(click)="addNumber('5')">5</button>
+        <button class="btn"(click)="addNumber('6')">6</button>
+        <button class="btn btn_operator"(click)="addOperator('-')"><i class="fa-solid fa-minus"></i></button>
+        <button class="btn"(click)="addNumber('1')">1</button>
+        <button class="btn"(click)="addNumber('2')">2</button>
+        <button class="btn"(click)="addNumber('3')">3</button>
+        <button class="btn btn_operator"(click)="addOperator('+')"><i class="fa-solid fa-plus"></i></button>
+        <button class="btn btn_operator"(click)="delete()"><i class="fa-solid fa-delete-left"></i></button>
+        <button class="btn"(click)="addNumber('0')">0</button>
+        <button class="btn"(click)="addComma()">,</button>
+        <button class="btn equal" (click)="calculate()"><i class="fa-solid fa-equals"></i></button>
+    </div>
+</div>
